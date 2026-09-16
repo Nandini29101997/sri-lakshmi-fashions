@@ -197,9 +197,11 @@ nav a:hover {
     align-items: center;
     cursor: pointer;
 }
+
 .logo a {
     text-decoration: none;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -217,26 +219,31 @@ nav a:hover {
     background-color: white;
     border-top: 1px solid #E5D5CC;
 }
+
 .booking-form {
     max-width: 500px;
     margin: 30px auto 0;
     text-align: center;
 }
+
 .booking-form textarea {
     min-height: 100px;
     resize: vertical;
 }
+
 .booking-form h3 {
     color: #8B1E4F;
     font-size: 24px;
     margin-bottom: 20px;
 }
+
 .booking-form input:focus,
 .booking-form select:focus,
 .booking-form textarea:focus {
     outline: none;
     border-color: #8B1E4F;
 }
+
 .booking-form button {
     background-color: #8B1E4F;
     color: white;
@@ -248,9 +255,11 @@ nav a:hover {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .booking-form button:hover {
     background-color: #C05A7A;
 }
+
 .booking-form label {
     text-align: left;
     color: #8B1E4F;
@@ -273,6 +282,7 @@ nav a:hover {
     font-size: 15px;
     font-family: Arial, sans-serif;
 }
+
 .contact h2 {
     color: #8B1E4F;
     font-size: 32px;
@@ -367,22 +377,31 @@ footer p {
 html {
     scroll-behavior: smooth;
 }
+
 .menu-button {
     display: none;
 }
 
 @media (max-width: 768px) {
     nav.show-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 15px 0;
-}
-nav.show-menu a {
-    padding: 5px 10px;
-}
-     
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 100%;
+        right: 10px;
+        background-color: #FBF3EA;
+        width: 100px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+    }
+
+    nav.show-menu a {
+        padding: 5px 10px;
+    }
+
     .menu-button {
         display: block;
         background: none;
@@ -397,9 +416,14 @@ nav.show-menu a {
     }
 
     header {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         height: auto;
-        gap: 20px;
+        padding: 10px 15px;
+        gap: 0;
+        position: relative;
     }
 
     nav {
@@ -449,14 +473,14 @@ nav.show-menu a {
     }
 
     .logo-text h1 {
-        white-space: nowrap;
-        font-size: 24px;
+        white-space: normal;
+        font-size: 18px;
     }
 
     nav {
         flex-wrap: nowrap;
         gap: 18px;
-        white-space: nowrap;
+        white-space: normal;
     }
 
     .hero p {
@@ -491,7 +515,7 @@ nav.show-menu a {
     .why-us {
         padding: 40px 20px;
     }
-    
+
 }
 
 .why-us {
@@ -541,12 +565,15 @@ nav.show-menu a {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
+
 .whatsapp-link {
     font-weight: 600;
 }
+
 section {
     scroll-margin-top: 120px;
 }
+
 .back-to-top {
     position: fixed;
     bottom: 20px;
